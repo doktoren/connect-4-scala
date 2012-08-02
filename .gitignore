@@ -1,0 +1,9 @@
+# Temporary files
+*~
+*/*~
+
+# Eclipse files
+.cache
+.classpath
+.project
+.settings/
