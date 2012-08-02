@@ -9,6 +9,15 @@ class BaseBoard(val width:Int, val height:Int) {
   type Position = Int
   type BoardPattern = Long
 
+  val d_up = 1
+  val d_down = -d_up
+  val d_right = height + 1
+  val d_left = -d_right
+  val d_up_right = d_up + d_right
+  val d_up_left = d_up + d_left
+  val d_down_right = d_down + d_right
+  val d_down_left = d_down + d_left
+
   val positions : Array[(Int, Int)] = {
     val seq =
       for { x <- 0 until width
@@ -18,36 +27,36 @@ class BaseBoard(val width:Int, val height:Int) {
     seq.toArray
   }
 
-  def pos(column:Int, row:Int):Position = row * width + column*(height+1)
+  def pos(column:Int, row:Int):Position = column * d_right + row
 
-	def bit(column:Int, row:Int):BoardPattern = 1L << (row * width + column)
+  def bit(column:Int, row:Int):BoardPattern = 1L << pos(column, row)
 
-	/**
-	 * Returns a list of possible connect 4 patterns for the given position
-	 */
-	def patterns(column:Int, row:Int):List[BoardPattern] =
+  /**
+   * Returns a list of possible connect 4 patterns for the given position
+   */
+  def patterns(column:Int, row:Int):List[BoardPattern] =
     for { i <- List.range(0, 4)
-          d <- List((1,0), (0,1), (1,1), (1,-1))
-          if (0 <= column + (i-0)*d._1 && column + (i-0)*d._1 < width &&
-              0 <= row + (i-0)*d._2 && row + (i-0)*d._2 < height)
-          if (0 <= column + (i-1)*d._1 && column + (i-1)*d._1 < width &&
-              0 <= row + (i-1)*d._2 && row + (i-1)*d._2 < height)
-          if (0 <= column + (i-2)*d._1 && column + (i-2)*d._1 < width &&
-              0 <= row + (i-2)*d._2 && row + (i-2)*d._2 < height)
-          if (0 <= column + (i-3)*d._1 && column + (i-3)*d._1 < width &&
-              0 <= row + (i-3)*d._2 && row + (i-3)*d._2 < height)
-        }
-      yield bit(column + (i-0)*d._1, row + (i-0)*d._2) |
-            bit(column + (i-1)*d._1, row + (i-1)*d._2) |
-            bit(column + (i-2)*d._1, row + (i-2)*d._2) |
-            bit(column + (i-3)*d._1, row + (i-3)*d._2)
+      d <- List((1,0), (0,1), (1,1), (1,-1))
+      if (0 <= column + (i-0)*d._1 && column + (i-0)*d._1 < width &&
+          0 <= row + (i-0)*d._2 && row + (i-0)*d._2 < height)
+      if (0 <= column + (i-1)*d._1 && column + (i-1)*d._1 < width &&
+          0 <= row + (i-1)*d._2 && row + (i-1)*d._2 < height)
+      if (0 <= column + (i-2)*d._1 && column + (i-2)*d._1 < width &&
+          0 <= row + (i-2)*d._2 && row + (i-2)*d._2 < height)
+      if (0 <= column + (i-3)*d._1 && column + (i-3)*d._1 < width &&
+          0 <= row + (i-3)*d._2 && row + (i-3)*d._2 < height)
+    }
+    yield bit(column + (i-0)*d._1, row + (i-0)*d._2) |
+          bit(column + (i-1)*d._1, row + (i-1)*d._2) |
+          bit(column + (i-2)*d._1, row + (i-2)*d._2) |
+          bit(column + (i-3)*d._1, row + (i-3)*d._2)
 
 	val compute_patterns_per_square =
 	  positions.map(pos => patterns(pos._1, pos._2))
 
 	/** Used by list_moves */
   val column_topbit_pairs =
-    List.range(0, width).map(column => (column, 1L << ((height + 1) * column + (height - 1))))
+    List.range(0, width).map(column => (column, 1L << (column * d_right + (height - 1))))
 
   def list_moves(pattern:BoardPattern) =
     column_topbit_pairs.filter(v => (pattern & v._2) == 0).map(v => v._1)
@@ -58,8 +67,17 @@ class BaseBoard(val width:Int, val height:Int) {
   val top_row_positions =
     List.range(0, width).map(column => column * (height + 1))
 
-  def print(board:BoardPattern, filter:BoardPattern) =
-    ()//TODO
+
+  def toString(f:BoardPattern => Char):String = {
+    val top_a = for ( column <- List.range(0, width) ) yield "|%2d ".format(column)
+    val top_b = "|\n" :: (for ( column <- List.range(0, width) ) yield "|---")
+    val b = List.flatten(
+      for ( row <- List.range(height - 1, -1, -1) )
+        yield "|\n" :: (for ( column <- List.range(0, width) ) yield "| %c ".format(f(bit(column, row))))
+    )
+    List.flatten(List(top_a, top_b, b, List("|\n")))./:\("")(_+_)
+  }
+
 }
 
 
@@ -67,7 +85,7 @@ class BitBoard(val base:BaseBoard, var board:Long, var filter:Long, var moves:Li
 
   def this(base:BaseBoard) =
     this( base,
-          (for (i <- 0 until base.width) yield 1L << (i * (base.height + 1)))./:\(0L)(_|_),
+          (for (column <- 0 until base.width) yield 1L << (column * base.d_right))./:\(0L)(_|_),
           0,
           List())
 
@@ -97,23 +115,36 @@ class BitBoard(val base:BaseBoard, var board:Long, var filter:Long, var moves:Li
     def inner(position:Int):Int =
       (filter & (1L << position)) match {
         case 0 => position
-        case _ => inner(position + 1)
+        case _ => inner(position + base.d_up)
       }
-    inner(column)
+    val result = inner(base.pos(column, 0))
+    result
   }
 
   def make_move(column:Integer) = {
     val pos = insert_position(column)
+    board = board ^ (1L << (pos + base.d_up)) ^ filter
     filter = filter ^ (1L << pos)
-    board = board ^ (3L << pos) ^ filter
     moves = pos :: moves
   }
 
-  def undo_move(column:Integer) = {
+  def undo_move() = {
     val pos = moves.head
     moves = moves.tail
-    board = board ^ (3L << pos) ^ filter
     filter = filter ^ (1L << pos)
+    board = board ^ (1L << (pos + base.d_up)) ^ filter
+  }
+
+  override def toString():String = {
+    def pos(b:Long):Char = {
+      if ((b & filter) == 0)
+        ' '
+      else if (((b & board) == 0) == cross_to_move())
+        'X'
+      else
+        'O'
+    }
+    base.toString(pos)
   }
 
   override def clone():BitBoard =
@@ -196,4 +227,20 @@ class WrapperBoard extends Board {
     result
   }
 
+}
+
+object Test {
+  def main(args : Array[String]) : Unit = {
+    val base = new BaseBoard(7, 6)
+    var board = new BitBoard(base)
+    val actions = "33333344uuu06"
+    actions.foreach( action => {
+      action match {
+        case 'u' => board.undo_move()
+        case _ => board.make_move(action - '0')
+      }
+      System.out.println(board.toString())
+      System.out.println("Valid moves: " + board.list_moves().map(String.valueOf).reduce(_ + ", " + _))
+    })
+  }
 }
