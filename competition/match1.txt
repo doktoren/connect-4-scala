@@ -1,0 +1,622 @@
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   |   | 
+3 |   |   |   |   |   |   |   | 
+4 |   |   |   |   |   |   |   | 
+5 |   |   |   |   |   |   |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:8)
+pc Cross (depth:8) choosed 6
+
+
+
+ INFO:evaluatedCnt=529097
+ INFO:evaluationSkipped:270483
+ INFO:postCall(6,0.9164670346838871)
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   |   | 
+3 |   |   |   |   |   |   |   | 
+4 |   |   |   |   |   |   |   | 
+5 |   |   |   |   |   |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   | X |
+
+Search depth is 8
+
+Jespers engine choosed 3
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   |   | 
+3 |   |   |   |   |   |   |   | 
+4 |   |   |   |   |   |   |   | 
+5 |   |   |   | o |   |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:8)
+ INFO:evaluatedCnt=509201
+pc Cross (depth:8) choosed 6
+ INFO:evaluationSkipped:260861
+ INFO:postCall(6,0.7575252577856473)
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   |   | 
+3 |   |   |   |   |   |   |   | 
+4 |   |   |   |   |   |   | x | 
+5 |   |   |   | o |   |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   | X |
+|   |   |   | O |   |   | X |
+
+Search depth is 8
+
+Jespers engine choosed 2
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   |   | 
+3 |   |   |   |   |   |   |   | 
+4 |   |   |   |   |   |   | x | 
+5 |   |   | o | o |   |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:8)
+ INFO:evaluatedCnt=401503
+ INFO:evaluationSkipped:204079
+pc Cross (depth:8) choosed 6
+ INFO:postCall(6,0.46453494427663783)
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   |   | 
+3 |   |   |   |   |   |   | x | 
+4 |   |   |   |   |   |   | x | 
+5 |   |   | o | o |   |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   | X |
+|   |   |   |   |   |   | X |
+|   |   | O | O |   |   | X |
+
+Search depth is 8
+
+Jespers engine choosed 6
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   | o | 
+3 |   |   |   |   |   |   | x | 
+4 |   |   |   |   |   |   | x | 
+5 |   |   | o | o |   |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:8)
+ INFO:evaluatedCnt=372489
+pc Cross (depth:8) choosed 4
+ INFO:evaluationSkipped:191542
+ INFO:postCall(4,0.3519425059889595)
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   | o | 
+3 |   |   |   |   |   |   | x | 
+4 |   |   |   |   |   |   | x | 
+5 |   |   | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Exception in thread "Thread-13" java.lang.RuntimeException: Failed to convert board
+  at scala.sys.package$.error(package.scala:27)
+  at scala.Predef$.error(Predef.scala:123)
+  at connect4.Engine$$anonfun$columnToPlay$1$5.apply$mcVI$sp(BitBoard.scala:339)
+  at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:81)
+  at connect4.Engine.columnToPlay$1(BitBoard.scala:336)
+  at connect4.Engine.convert(BitBoard.scala:347)
+  at connect4.Engine.choice(BitBoard.scala:370)
+  at connect4.PlayerWithTimeout$$anon$1.run(PlayerWithTimeout.scala:23)
+timeout for player Jespers engine choosing random move
+Jespers engine choosed 0
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   | o | 
+3 |   |   |   |   |   |   | x | 
+4 |   |   |   |   |   |   | x | 
+5 | o |   | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:8)
+ INFO:evaluatedCnt=308402
+pc Cross (depth:9) choosed 1
+ INFO:evaluationSkipped:159579
+ INFO:postCall(1,0.2699718779293824)
+ INFO:movesDepth increased to: 9
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   | o | 
+3 |   |   |   |   |   |   | x | 
+4 |   |   |   |   |   |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Exception in thread "Thread-16" java.lang.RuntimeException: Failed to convert board
+  at scala.sys.package$.error(package.scala:27)
+  at scala.Predef$.error(Predef.scala:123)
+  at connect4.Engine$$anonfun$columnToPlay$1$5.apply$mcVI$sp(BitBoard.scala:339)
+  at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:81)
+  at connect4.Engine.columnToPlay$1(BitBoard.scala:336)
+  at connect4.Engine.convert(BitBoard.scala:347)
+  at connect4.Engine.choice(BitBoard.scala:370)
+  at connect4.PlayerWithTimeout$$anon$1.run(PlayerWithTimeout.scala:23)
+timeout for player Jespers engine choosing random move
+Jespers engine choosed 4
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   | o | 
+3 |   |   |   |   |   |   | x | 
+4 |   |   |   |   | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:9)
+ INFO:postCall(null,0.9998958441828976)
+ INFO:************************* movesDepth decreased to: 8
+timeout for player pc Cross (depth:8) choosing random move
+pc Cross (depth:8) choosed 1
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   | o | 
+3 |   |   |   |   |   |   | x | 
+4 |   | x |   |   | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Exception in thread "Thread-19" java.lang.RuntimeException: Failed to convert board
+  at scala.sys.package$.error(package.scala:27)
+  at scala.Predef$.error(Predef.scala:123)
+  at connect4.Engine$$anonfun$columnToPlay$1$5.apply$mcVI$sp(BitBoard.scala:339)
+  at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:81)
+  at connect4.Engine.columnToPlay$1(BitBoard.scala:336)
+  at connect4.Engine.convert(BitBoard.scala:347)
+  at connect4.Engine.choice(BitBoard.scala:370)
+  at connect4.PlayerWithTimeout$$anon$1.run(PlayerWithTimeout.scala:23)
+timeout for player Jespers engine choosing random move
+Jespers engine choosed 0
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   | o | 
+3 |   |   |   |   |   |   | x | 
+4 | o | x |   |   | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:8)
+ INFO:evaluatedCnt=347047
+ INFO:evaluationSkipped:186032
+pc Cross (depth:9) choosed 6
+ INFO:postCall(6,0.29590667638787627)
+ INFO:movesDepth increased to: 9
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   | x | 
+2 |   |   |   |   |   |   | o | 
+3 |   |   |   |   |   |   | x | 
+4 | o | x |   |   | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   | X |
+|   |   |   |   |   |   | O |
+|   |   |   |   |   |   | X |
+| O | X |   |   | O |   | X |
+| O | X | O | O | X |   | X |
+
+Search depth is 8
+
+Jespers engine choosed 3
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   | x | 
+2 |   |   |   |   |   |   | o | 
+3 |   |   |   |   |   |   | x | 
+4 | o | x |   | o | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:9)
+ INFO:evaluatedCnt=647469
+pc Cross (depth:9) choosed 3
+ INFO:evaluationSkipped:368770
+ INFO:postCall(3,0.5925424434954693)
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   | x | 
+2 |   |   |   |   |   |   | o | 
+3 |   |   |   | x |   |   | x | 
+4 | o | x |   | o | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   | X |
+|   |   |   |   |   |   | O |
+|   |   |   | X |   |   | X |
+| O | X |   | O | O |   | X |
+| O | X | O | O | X |   | X |
+
+Search depth is 8
+
+Jespers engine choosed 3
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   | x | 
+2 |   |   |   | o |   |   | o | 
+3 |   |   |   | x |   |   | x | 
+4 | o | x |   | o | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:9)
+ INFO:evaluatedCnt=489575
+ INFO:evaluationSkipped:282923
+ INFO:postCall(6,0.3639204249557338)
+pc Cross (depth:9) choosed 6
+
+
+
+
+0 |   |   |   |   |   |   | x | 
+1 |   |   |   |   |   |   | x | 
+2 |   |   |   | o |   |   | o | 
+3 |   |   |   | x |   |   | x | 
+4 | o | x |   | o | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   | X |
+|   |   |   |   |   |   | X |
+|   |   |   | O |   |   | O |
+|   |   |   | X |   |   | X |
+| O | X |   | O | O |   | X |
+| O | X | O | O | X |   | X |
+
+Search depth is 8
+
+Jespers engine choosed 3
+
+
+
+
+0 |   |   |   |   |   |   | x | 
+1 |   |   |   | o |   |   | x | 
+2 |   |   |   | o |   |   | o | 
+3 |   |   |   | x |   |   | x | 
+4 | o | x |   | o | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:9)
+ INFO:evaluatedCnt=160848
+ INFO:evaluationSkipped:85615
+pc Cross (depth:10) choosed 4
+ INFO:postCall(4,0.0885324445370274)
+ INFO:movesDepth increased to: 10
+
+
+
+
+0 |   |   |   |   |   |   | x | 
+1 |   |   |   | o |   |   | x | 
+2 |   |   |   | o |   |   | o | 
+3 |   |   |   | x | x |   | x | 
+4 | o | x |   | o | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   | X |
+|   |   |   | O |   |   | X |
+|   |   |   | O |   |   | O |
+|   |   |   | X | X |   | X |
+| O | X |   | O | O |   | X |
+| O | X | O | O | X |   | X |
+
+Search depth is 8
+
+Jespers engine choosed 4
+
+
+
+
+0 |   |   |   |   |   |   | x | 
+1 |   |   |   | o |   |   | x | 
+2 |   |   |   | o | o |   | o | 
+3 |   |   |   | x | x |   | x | 
+4 | o | x |   | o | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:10)
+ INFO:evaluatedCnt=184328
+ INFO:evaluationSkipped:103421
+ INFO:postCall(4,0.08749088636600354)
+ INFO:movesDepth increased to: 11
+pc Cross (depth:11) choosed 4
+
+
+
+
+0 |   |   |   |   |   |   | x | 
+1 |   |   |   | o | x |   | x | 
+2 |   |   |   | o | o |   | o | 
+3 |   |   |   | x | x |   | x | 
+4 | o | x |   | o | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   | X |
+|   |   |   | O | X |   | X |
+|   |   |   | O | O |   | O |
+|   |   |   | X | X |   | X |
+| O | X |   | O | O |   | X |
+| O | X | O | O | X |   | X |
+
+Search depth is 8
+
+Jespers engine choosed 1
+
+
+
+
+0 |   |   |   |   |   |   | x | 
+1 |   |   |   | o | x |   | x | 
+2 |   |   |   | o | o |   | o | 
+3 |   | o |   | x | x |   | x | 
+4 | o | x |   | o | o |   | x | 
+5 | o | x | o | o | x |   | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:11)
+ INFO:evaluatedCnt=131860
+ INFO:evaluationSkipped:76267
+pc Cross (depth:12) choosed 5
+
+
+
+
+0 |   |   |   |   |   |   | x | 
+1 |   |   |   | o | x |   | x | 
+2 |   |   |   | o | o |   | o | 
+3 |   | o |   | x | x |   | x | 
+4 | o | x |   | o | o |   | x | 
+5 | o | x | o | o | x | x | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+ INFO:postCall(5,0.050098948026247266)
+ INFO:movesDepth increased to: 12
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   | X |
+|   |   |   | O | X |   | X |
+|   |   |   | O | O |   | O |
+|   | O |   | X | X |   | X |
+| O | X |   | O | O |   | X |
+| O | X | O | O | X | X | X |
+
+Search depth is 8
+
+Jespers engine choosed 2
+
+
+
+
+0 |   |   |   |   |   |   | x | 
+1 |   |   |   | o | x |   | x | 
+2 |   |   |   | o | o |   | o | 
+3 |   | o |   | x | x |   | x | 
+4 | o | x | o | o | o |   | x | 
+5 | o | x | o | o | x | x | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:12)
+ INFO:evaluatedCnt=27628
+ INFO:evaluationSkipped:15641
+ INFO:postCall(5,0.008957400270805124)
+ INFO:movesDepth increased to: 13
+pc Cross (depth:13) choosed 5
+
+
+
+
+0 |   |   |   |   |   |   | x | 
+1 |   |   |   | o | x |   | x | 
+2 |   |   |   | o | o |   | o | 
+3 |   | o |   | x | x |   | x | 
+4 | o | x | o | o | o | x | x | 
+5 | o | x | o | o | x | x | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   | X |
+|   |   |   | O | X |   | X |
+|   |   |   | O | O |   | O |
+|   | O |   | X | X |   | X |
+| O | X | O | O | O | X | X |
+| O | X | O | O | X | X | X |
+
+Search depth is 8
+
+Jespers engine choosed 5
+==================================
+
+0 |   |   |   |   |   |   | x | 
+1 |   |   |   | o | x |   | x | 
+2 |   |   |   | o | o |   | o | 
+3 |   | o |   | x | x | o | x | 
+4 | o | x | o | o | o | x | x | 
+5 | o | x | o | o | x | x | x | 
+    0   1   2   3   4   5   6   
+winner:Circle
+winner:Jespers engine

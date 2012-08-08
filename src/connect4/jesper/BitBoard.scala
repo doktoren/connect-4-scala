@@ -1,7 +1,8 @@
+package connect4
 
-import connect4.Board
-import connect4.Color
-import connect4.Player
+//import connect4.Board
+//import connect4.Color
+//import connect4.Player
 import scala.util.Random
 
 /**
@@ -20,6 +21,9 @@ class BaseBoard(val width:Int, val height:Int) {
   val d_up_left = d_up + d_left
   val d_down_right = d_down + d_right
   val d_down_left = d_down + d_left
+
+  val size = width * height
+  val size_plus = size + width
 
   val positions : Array[(Int, Int)] = {
     val seq =
@@ -86,7 +90,16 @@ class BaseBoard(val width:Int, val height:Int) {
 
 class BitBoard(val base:BaseBoard, var board:Long, var filter:Long, var moves:List[Int]) {
 
-  var value = 0
+  // All even values are exact scores.
+  var value = 1
+
+  val randomness = {
+    for (i <- Array.range(0, base.size_plus))
+      yield 2 * Random.nextInt(10)
+  }
+
+  var moves_left = base.size - moves.size
+  def moves_played = base.size - moves_left
 
   def this(base:BaseBoard) =
     this( base,
@@ -94,18 +107,11 @@ class BitBoard(val base:BaseBoard, var board:Long, var filter:Long, var moves:Li
           0,
           List())
 
-  /**
-   * Slow!
-   */
-  def cross_to_move() = (moves.length & 1) == 0
-
   def representation = board
   def player_board = board & filter
   def opponent_board = ~board & filter
 
-  /**
-   * Slow!
-   */
+  def cross_to_move() = ((moves_left ^ base.size) & 1) == 0
   def cross_board() = if (cross_to_move()) player_board else opponent_board
   def circle_board() = if (cross_to_move()) opponent_board else player_board
 
@@ -122,10 +128,8 @@ class BitBoard(val base:BaseBoard, var board:Long, var filter:Long, var moves:Li
   }
 
   private def position_value(pos:Int) = {
-    base.patterns_per_square(pos).size
+    10 * base.patterns_per_square(pos).size + randomness(pos)
   }
-
-  def eval_score() = value
 
   def make_move(column:Int) = {
     val pos = insert_position(column)
@@ -133,9 +137,11 @@ class BitBoard(val base:BaseBoard, var board:Long, var filter:Long, var moves:Li
     filter = filter ^ (1L << pos)
     moves = pos :: moves
     value = -(value + position_value(pos))
+    moves_left -= 1
   }
 
   def undo_move() = {
+    moves_left += 1
     val pos = moves.head
     value = -value - position_value(pos)
     moves = moves.tail
@@ -143,7 +149,7 @@ class BitBoard(val base:BaseBoard, var board:Long, var filter:Long, var moves:Li
     board = board ^ (1L << (pos + base.d_up)) ^ filter
   }
 
-  def game_over() = {
+  def game_is_lost() = {
     moves match {
       case Nil => false
       case last_move :: _ => {
@@ -153,9 +159,57 @@ class BitBoard(val base:BaseBoard, var board:Long, var filter:Long, var moves:Li
     }
   }
 
+  def game_has_ended() = moves_left match {
+    case 0 => true
+    case _ => game_is_lost()
+  }
+
+  def eval_score() = game_is_lost() match {
+    case true => 0x80010000 | (moves_played << 1)
+    case false => moves_left match {
+      case 0 => 0
+      case _ => value
+    }
+  }
+
+  def score_is_exact(score:Int):Boolean = (score & 1) == 0
+
+  /**
+   * Returns (move, value) move is the computed move and score the evaluation of that move
+   * @param ply a positive integer
+   */
+  def min_max(_ply:Int):(Int, Int) = {
+    val ply = if (moves_left < _ply) moves_left else _ply
+    def move_value(column:Int):Int = {
+      make_move(column)
+      val opponent_value = eval_score() match {
+        case score if score_is_exact(score) => score
+        case score => if (ply == 1) score else min_max(ply - 1)._2
+      }
+      undo_move()
+      -opponent_value
+    }
+    val move_values = list_moves().map(c => (c, move_value(c)))
+    // Select and return the best move
+    move_values./:\(-1, Int.MinValue)((acc:(Int,Int),mv:(Int,Int)) => if (acc._2 > mv._2) acc else mv)
+  }
+
   def compute_move() = {
-    val moves = list_moves()
-    Random.nextInt(moves.size)
+    System.out.println("Compute best move for board\n"+toString())
+    1 match {
+      case 0 => {
+        val moves = list_moves()
+        Random.nextInt(moves.size)
+      }
+      case 1 => {
+        val ply = list_moves().size match {
+          case n => (Math.log(50000000.0) / Math.log(n)).intValue()
+        }
+        //System.out.println("Search depth is %s\n".format(ply))
+        val (move, value) = min_max(ply)
+        move
+      }
+    }
   }
 
   /**
@@ -203,7 +257,7 @@ class WrapperBoard(val board:BitBoard) extends Board {
    * or null if no color is winning
    */
   def isWin():Color.Color = {
-    if (!board.game_over()) null else (if (board.cross_to_move()) Color.Circle else Color.Cross) 
+    if (!board.game_is_lost()) null else (if (board.cross_to_move()) Color.Circle else Color.Cross)
   }
 
   /**
@@ -233,9 +287,12 @@ class WrapperBoard(val board:BitBoard) extends Board {
 
 class Engine(color:Color.Color) extends Player {
 
+  /**
+   * Maybe theoretically could fail, but let's assume that it doesn't...
+   */
   def convert(b:Board):BitBoard = {
     val array_board = b.getBoard()
-    val base = new BaseBoard(array_board.size, array_board(0).size)
+    val base = new BaseBoard(array_board(0).size, array_board.size)
     var board = new BitBoard(base)
     val heights = Array.ofDim[Int](base.width)
     var player = Color.Cross
@@ -243,10 +300,47 @@ class Engine(color:Color.Color) extends Player {
     def columnToPlay():Int =
       {
         for (column <- 0 until base.width) {
-          if (heights(column) < base.height  &&  array_board(column)(map_row(heights(column))) == player) {
+          val row = heights(column)
+          if (row + 3 < base.height  &&
+              array_board(map_row(row))(column) == player  &&
+              array_board(map_row(row + 1))(column) == Color.invert(player)  &&
+              array_board(map_row(row + 2))(column) == Color.invert(player)  &&
+              array_board(map_row(row + 3))(column) == Color.invert(player)) {
             heights(column) += 1
             return column
           }
+        }
+        for (column <- 0 until base.width) {
+          val row = heights(column)
+          if (row + 2 < base.height  &&
+              array_board(map_row(row))(column) == player  &&
+              array_board(map_row(row + 1))(column) == Color.invert(player)  &&
+              array_board(map_row(row + 2))(column) == Color.invert(player)) {
+            heights(column) += 1
+            return column
+          }
+        }
+        for (column <- 0 until base.width) {
+          val row = heights(column)
+          if (row + 1 < base.height  &&
+              array_board(map_row(row))(column) == player  &&
+              array_board(map_row(row + 1))(column) == Color.invert(player)) {
+            heights(column) += 1
+            return column
+          }
+        }
+        for (column <- 0 until base.width) {
+          val row = heights(column)
+          if (row < base.height  &&
+              array_board(map_row(row))(column) == player) {
+            heights(column) += 1
+            return column
+          }
+        }
+        for (column <- 0 until base.width) {
+          val row = heights(column)
+          if (row < base.height  &&  array_board(map_row(row))(column) != null)
+            error("Failed to convert board")
         }
         return -1
       }
@@ -256,40 +350,32 @@ class Engine(color:Color.Color) extends Player {
       player = Color.invert(player)
       column = columnToPlay()
     }
+    /*
+    for (column <- 0 until base.width)
+      for (row <- 0 until base.height) {
+        val piece = array_board(map_row(row))(column)
+        if (piece != null) {
+          val b = base.bit(column, row)
+          board.filter |= b
+          board.board |= b << base.d_up
+          if (piece == Color.Circle)
+            board.board ^= b
+          board.moves = base.pos(column, row) :: board.moves
+          board.moves_left -= 1
+        }
+      }
+    if ((board.moves_played & 1) != 0)
+      board.board ^= board.filter
+    */
     board
   }
 
   def choice(board:Board):Integer = {
     val b = convert(board)
-    if (b.game_over()) -1 else new Integer(b.compute_move())
+    if (b.game_has_ended()) -1 else new Integer(b.compute_move())
   }
 
   def getColor():Color.Color = color
-}
 
-
-
-object Test {
-  def main(args : Array[String]) : Unit = {
-    val base = new BaseBoard(7, 6)
-    var board = new BitBoard(base)
-    val actions = "33333344552u12244uu06"
-    actions.foreach( action => {
-      action match {
-        case 'u' => board.undo_move()
-        case _ => board.make_move(action - '0')
-      }
-      System.out.println(board.toString())
-      if (board.game_over())
-        System.out.println("GAME OVER!")
-      else
-        System.out.println("Board evaluation for player to move is %d".format(board.eval_score()))
-        System.out.println("Valid moves: " + board.list_moves().map(String.valueOf).reduce(_ + ", " + _))
-    })
-    if (false)
-      base.patterns_per_square.foreach( pattern_list => {
-        val union = pattern_list./:\(0L)(_|_)
-        System.out.println(base.toString(b => if ((b & union) == 0) ' ' else 'X'))
-      })
-  }
+  override def toString():String = "Jespers engine"
 }

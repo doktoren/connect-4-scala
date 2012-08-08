@@ -1,0 +1,963 @@
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   |   | 
+3 |   |   |   |   |   |   |   | 
+4 |   |   |   |   |   |   |   | 
+5 |   |   |   |   |   |   |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:8)
+ INFO:evaluationSkipped:270483
+ INFO:postCall(3,0.955108842828872)
+pc Cross (depth:8) choosed 3
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   |   | 
+3 |   |   |   |   |   |   |   | 
+4 |   |   |   |   |   |   |   | 
+5 |   |   |   | x |   |   |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   | X |   |   |   |
+
+Search depth is 8
+
+Jespers engine choosed 3
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   |   | 
+3 |   |   |   |   |   |   |   | 
+4 |   |   |   | o |   |   |   | 
+5 |   |   |   | x |   |   |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:8)
+ INFO:evaluationSkipped:252866
+pc Cross (depth:8) choosed 3
+ INFO:postCall(3,0.6486824289136548)
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   |   |   |   |   | 
+3 |   |   |   | x |   |   |   | 
+4 |   |   |   | o |   |   |   | 
+5 |   |   |   | x |   |   |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |
+|   |   |   | X |   |   |   |
+|   |   |   | O |   |   |   |
+|   |   |   | X |   |   |   |
+
+Search depth is 8
+
+Jespers engine choosed 3
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   |   |   |   |   | 
+2 |   |   |   | o |   |   |   | 
+3 |   |   |   | x |   |   |   | 
+4 |   |   |   | o |   |   |   | 
+5 |   |   |   | x |   |   |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:8)
+ INFO:evaluationSkipped:223582
+pc Cross (depth:8) choosed 3
+ INFO:postCall(3,0.43932923653786066)
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   |   |   | 
+3 |   |   |   | x |   |   |   | 
+4 |   |   |   | o |   |   |   | 
+5 |   |   |   | x |   |   |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   |   |   |   |   |
+|   |   |   | X |   |   |   |
+|   |   |   | O |   |   |   |
+|   |   |   | X |   |   |   |
+|   |   |   | O |   |   |   |
+|   |   |   | X |   |   |   |
+
+Search depth is 8
+
+Jespers engine choosed 4
+
+
+
+
+0 |   |   |   |   |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   |   |   | 
+3 |   |   |   | x |   |   |   | 
+4 |   |   |   | o |   |   |   | 
+5 |   |   |   | x | o |   |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:8)
+ INFO:evaluationSkipped:184764
+pc Cross (depth:8) choosed 3
+ INFO:postCall(3,0.3246536819081346)
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   |   |   | 
+3 |   |   |   | x |   |   |   | 
+4 |   |   |   | o |   |   |   | 
+5 |   |   |   | x | o |   |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|   |   |   | X |   |   |   |
+|   |   |   | O |   |   |   |
+|   |   |   | X |   |   |   |
+|   |   |   | O |   |   |   |
+|   |   |   | X | O |   |   |
+
+Search depth is 8
+
+Jespers engine choosed 5
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   |   |   | 
+3 |   |   |   | x |   |   |   | 
+4 |   |   |   | o |   |   |   | 
+5 |   |   |   | x | o | o |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:8)
+ INFO:evaluationSkipped:93353
+pc Cross (depth:9) choosed 2
+ INFO:postCall(2,0.16977398187688783)
+ INFO:movesDepth increased to: 9
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   |   |   | 
+3 |   |   |   | x |   |   |   | 
+4 |   |   |   | o |   |   |   | 
+5 |   |   | x | x | o | o |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|   |   |   | X |   |   |   |
+|   |   |   | O |   |   |   |
+|   |   |   | X |   |   |   |
+|   |   |   | O |   |   |   |
+|   |   | X | X | O | O |   |
+
+Search depth is 8
+
+Jespers engine choosed 2
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   |   |   | 
+3 |   |   |   | x |   |   |   | 
+4 |   |   | o | o |   |   |   | 
+5 |   |   | x | x | o | o |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:9)
+ INFO:evaluationSkipped:227933
+pc Cross (depth:9) choosed 2
+ INFO:postCall(2,0.4528694927611707)
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   |   |   | 
+3 |   |   | x | x |   |   |   | 
+4 |   |   | o | o |   |   |   | 
+5 |   |   | x | x | o | o |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|   |   |   | X |   |   |   |
+|   |   |   | O |   |   |   |
+|   |   | X | X |   |   |   |
+|   |   | O | O |   |   |   |
+|   |   | X | X | O | O |   |
+
+Search depth is 8
+
+Jespers engine choosed 5
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   |   |   | 
+3 |   |   | x | x |   |   |   | 
+4 |   |   | o | o |   | o |   | 
+5 |   |   | x | x | o | o |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:9)
+ INFO:evaluationSkipped:130516
+pc Cross (depth:10) choosed 4
+ INFO:postCall(4,0.19050098948026248)
+ INFO:movesDepth increased to: 10
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   |   |   | 
+3 |   |   | x | x |   |   |   | 
+4 |   |   | o | o | x | o |   | 
+5 |   |   | x | x | o | o |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|   |   |   | X |   |   |   |
+|   |   |   | O |   |   |   |
+|   |   | X | X |   |   |   |
+|   |   | O | O | X | O |   |
+|   |   | X | X | O | O |   |
+
+Search depth is 8
+
+Jespers engine choosed 5
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   |   |   | 
+3 |   |   | x | x |   | o |   | 
+4 |   |   | o | o | x | o |   | 
+5 |   |   | x | x | o | o |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:10)
+ INFO:evaluationSkipped:293444
+pc Cross (depth:10) choosed 5
+ INFO:postCall(5,0.48630351005103634)
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   | x |   | 
+3 |   |   | x | x |   | o |   | 
+4 |   |   | o | o | x | o |   | 
+5 |   |   | x | x | o | o |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|   |   |   | X |   |   |   |
+|   |   |   | O |   | X |   |
+|   |   | X | X |   | O |   |
+|   |   | O | O | X | O |   |
+|   |   | X | X | O | O |   |
+
+Search depth is 8
+
+Jespers engine choosed 4
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   | x |   | 
+3 |   |   | x | x | o | o |   | 
+4 |   |   | o | o | x | o |   | 
+5 |   |   | x | x | o | o |   | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:10)
+ INFO:evaluationSkipped:201559
+pc Cross (depth:11) choosed 6
+ INFO:postCall(6,0.2618477241953963)
+ INFO:movesDepth increased to: 11
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o |   | x |   | 
+3 |   |   | x | x | o | o |   | 
+4 |   |   | o | o | x | o |   | 
+5 |   |   | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|   |   |   | X |   |   |   |
+|   |   |   | O |   | X |   |
+|   |   | X | X | O | O |   |
+|   |   | O | O | X | O |   |
+|   |   | X | X | O | O | X |
+
+Search depth is 8
+
+Jespers engine choosed 4
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x |   |   |   | 
+2 |   |   |   | o | o | x |   | 
+3 |   |   | x | x | o | o |   | 
+4 |   |   | o | o | x | o |   | 
+5 |   |   | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:11)
+ INFO:evaluationSkipped:421106
+pc Cross (depth:11) choosed 4 INFO:postCall(4,0.6619102176856577)
+
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x | x |   |   | 
+2 |   |   |   | o | o | x |   | 
+3 |   |   | x | x | o | o |   | 
+4 |   |   | o | o | x | o |   | 
+5 |   |   | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   | X |   |   |   |
+|   |   |   | X | X |   |   |
+|   |   |   | O | O | X |   |
+|   |   | X | X | O | O |   |
+|   |   | O | O | X | O |   |
+|   |   | X | X | O | O | X |
+
+Search depth is 8
+
+Jespers engine choosed 5
+
+
+
+
+0 |   |   |   | x |   |   |   | 
+1 |   |   |   | x | x | o |   | 
+2 |   |   |   | o | o | x |   | 
+3 |   |   | x | x | o | o |   | 
+4 |   |   | o | o | x | o |   | 
+5 |   |   | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:11)
+ INFO:evaluationSkipped:133908
+pc Cross (depth:12) choosed 4
+ INFO:postCall(4,0.14769294865118218)
+ INFO:movesDepth increased to: 12
+
+
+
+
+0 |   |   |   | x | x |   |   | 
+1 |   |   |   | x | x | o |   | 
+2 |   |   |   | o | o | x |   | 
+3 |   |   | x | x | o | o |   | 
+4 |   |   | o | o | x | o |   | 
+5 |   |   | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   | X | X |   |   |
+|   |   |   | X | X | O |   |
+|   |   |   | O | O | X |   |
+|   |   | X | X | O | O |   |
+|   |   | O | O | X | O |   |
+|   |   | X | X | O | O | X |
+
+Search depth is 10
+
+Jespers engine choosed 1
+
+
+
+
+0 |   |   |   | x | x |   |   | 
+1 |   |   |   | x | x | o |   | 
+2 |   |   |   | o | o | x |   | 
+3 |   |   | x | x | o | o |   | 
+4 |   |   | o | o | x | o |   | 
+5 |   | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:12)
+ INFO:evaluationSkipped:71192
+ INFO:postCall(1,0.07061764399541715)
+ INFO:movesDepth increased to: 13
+pc Cross (depth:13) choosed 1
+
+
+
+
+0 |   |   |   | x | x |   |   | 
+1 |   |   |   | x | x | o |   | 
+2 |   |   |   | o | o | x |   | 
+3 |   |   | x | x | o | o |   | 
+4 |   | x | o | o | x | o |   | 
+5 |   | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   | X | X |   |   |
+|   |   |   | X | X | O |   |
+|   |   |   | O | O | X |   |
+|   |   | X | X | O | O |   |
+|   | X | O | O | X | O |   |
+|   | O | X | X | O | O | X |
+
+Search depth is 10
+
+Jespers engine choosed 5
+
+
+
+
+0 |   |   |   | x | x | o |   | 
+1 |   |   |   | x | x | o |   | 
+2 |   |   |   | o | o | x |   | 
+3 |   |   | x | x | o | o |   | 
+4 |   | x | o | o | x | o |   | 
+5 |   | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:13)
+ INFO:evaluationSkipped:23108
+pc Cross (depth:14) choosed 0
+
+
+
+
+0 |   |   |   | x | x | o |   | 
+1 |   |   |   | x | x | o |   | 
+2 |   |   |   | o | o | x |   | 
+3 |   |   | x | x | o | o |   | 
+4 |   | x | o | o | x | o |   | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+ INFO:postCall(0,0.022601812311217582)
+ INFO:movesDepth increased to: 14
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   | X | X | O |   |
+|   |   |   | X | X | O |   |
+|   |   |   | O | O | X |   |
+|   |   | X | X | O | O |   |
+|   | X | O | O | X | O |   |
+| X | O | X | X | O | O | X |
+
+Search depth is 11
+
+Jespers engine choosed 1
+
+
+
+
+0 |   |   |   | x | x | o |   | 
+1 |   |   |   | x | x | o |   | 
+2 |   |   |   | o | o | x |   | 
+3 |   | o | x | x | o | o |   | 
+4 |   | x | o | o | x | o |   | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:14)
+ INFO:evaluationSkipped:15459
+ INFO:postCall(1,0.012186230600979064)
+ INFO:movesDepth increased to: 15
+pc Cross (depth:15) choosed 1
+
+
+
+
+0 |   |   |   | x | x | o |   | 
+1 |   |   |   | x | x | o |   | 
+2 |   | x |   | o | o | x |   | 
+3 |   | o | x | x | o | o |   | 
+4 |   | x | o | o | x | o |   | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   |   |   | X | X | O |   |
+|   |   |   | X | X | O |   |
+|   | X |   | O | O | X |   |
+|   | O | X | X | O | O |   |
+|   | X | O | O | X | O |   |
+| X | O | X | X | O | O | X |
+
+Search depth is 11
+
+Jespers engine choosed 1
+
+
+
+
+0 |   |   |   | x | x | o |   | 
+1 |   | o |   | x | x | o |   | 
+2 |   | x |   | o | o | x |   | 
+3 |   | o | x | x | o | o |   | 
+4 |   | x | o | o | x | o |   | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:15)
+ INFO:evaluationSkipped:4387
+ INFO:postCall(1,0.003645453598583481)
+ INFO:movesDepth increased to: 16
+pc Cross (depth:16) choosed 1
+
+
+
+
+0 |   | x |   | x | x | o |   | 
+1 |   | o |   | x | x | o |   | 
+2 |   | x |   | o | o | x |   | 
+3 |   | o | x | x | o | o |   | 
+4 |   | x | o | o | x | o |   | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   | X |   | X | X | O |   |
+|   | O |   | X | X | O |   |
+|   | X |   | O | O | X |   |
+|   | O | X | X | O | O |   |
+|   | X | O | O | X | O |   |
+| X | O | X | X | O | O | X |
+
+Search depth is 14
+
+Jespers engine choosed 0
+
+
+
+
+0 |   | x |   | x | x | o |   | 
+1 |   | o |   | x | x | o |   | 
+2 |   | x |   | o | o | x |   | 
+3 |   | o | x | x | o | o |   | 
+4 | o | x | o | o | x | o |   | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:16)
+ INFO:evaluationSkipped:396
+ INFO:postCall(0,5.207790855119259E-4)
+ INFO:movesDepth increased to: 17
+pc Cross (depth:17) choosed 0
+
+
+
+
+0 |   | x |   | x | x | o |   | 
+1 |   | o |   | x | x | o |   | 
+2 |   | x |   | o | o | x |   | 
+3 | x | o | x | x | o | o |   | 
+4 | o | x | o | o | x | o |   | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   | X |   | X | X | O |   |
+|   | O |   | X | X | O |   |
+|   | X |   | O | O | X |   |
+| X | O | X | X | O | O |   |
+| O | X | O | O | X | O |   |
+| X | O | X | X | O | O | X |
+
+Search depth is 14
+
+Jespers engine choosed 0
+
+
+
+
+0 |   | x |   | x | x | o |   | 
+1 |   | o |   | x | x | o |   | 
+2 | o | x |   | o | o | x |   | 
+3 | x | o | x | x | o | o |   | 
+4 | o | x | o | o | x | o |   | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:17)
+ INFO:evaluationSkipped:45
+ INFO:postCall(0,1.0415581710238516E-4)
+ INFO:movesDepth increased to: 18
+pc Cross (depth:18) choosed 0
+
+
+
+
+0 |   | x |   | x | x | o |   | 
+1 | x | o |   | x | x | o |   | 
+2 | o | x |   | o | o | x |   | 
+3 | x | o | x | x | o | o |   | 
+4 | o | x | o | o | x | o |   | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+|   | X |   | X | X | O |   |
+| X | O |   | X | X | O |   |
+| O | X |   | O | O | X |   |
+| X | O | X | X | O | O |   |
+| O | X | O | O | X | O |   |
+| X | O | X | X | O | O | X |
+
+Search depth is 14
+
+Jespers engine choosed 0
+
+
+
+
+0 | o | x |   | x | x | o |   | 
+1 | x | o |   | x | x | o |   | 
+2 | o | x |   | o | o | x |   | 
+3 | x | o | x | x | o | o |   | 
+4 | o | x | o | o | x | o |   | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:18)
+ INFO:evaluationSkipped:0
+ INFO:postCall(6,1.0415581710238516E-4)
+ INFO:movesDepth increased to: 19
+pc Cross (depth:19) choosed 6
+
+
+
+
+0 | o | x |   | x | x | o |   | 
+1 | x | o |   | x | x | o |   | 
+2 | o | x |   | o | o | x |   | 
+3 | x | o | x | x | o | o |   | 
+4 | o | x | o | o | x | o | x | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| O | X |   | X | X | O |   |
+| X | O |   | X | X | O |   |
+| O | X |   | O | O | X |   |
+| X | O | X | X | O | O |   |
+| O | X | O | O | X | O | X |
+| X | O | X | X | O | O | X |
+
+Search depth is 23
+
+Jespers engine choosed 6
+
+
+
+
+0 | o | x |   | x | x | o |   | 
+1 | x | o |   | x | x | o |   | 
+2 | o | x |   | o | o | x |   | 
+3 | x | o | x | x | o | o | o | 
+4 | o | x | o | o | x | o | x | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:19)
+ INFO:evaluationSkipped:0
+ INFO:postCall(6,0.0)
+ INFO:movesDepth increased to: 20
+pc Cross (depth:20) choosed 6
+
+
+
+
+0 | o | x |   | x | x | o |   | 
+1 | x | o |   | x | x | o |   | 
+2 | o | x |   | o | o | x | x | 
+3 | x | o | x | x | o | o | o | 
+4 | o | x | o | o | x | o | x | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| O | X |   | X | X | O |   |
+| X | O |   | X | X | O |   |
+| O | X |   | O | O | X | X |
+| X | O | X | X | O | O | O |
+| O | X | O | O | X | O | X |
+| X | O | X | X | O | O | X |
+
+Search depth is 23
+
+Jespers engine choosed 6
+
+
+
+
+0 | o | x |   | x | x | o |   | 
+1 | x | o |   | x | x | o | o | 
+2 | o | x |   | o | o | x | x | 
+3 | x | o | x | x | o | o | o | 
+4 | o | x | o | o | x | o | x | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:20)
+ INFO:evaluationSkipped:0
+ INFO:postCall(6,0.0)
+ INFO:movesDepth increased to: 21
+pc Cross (depth:21) choosed 6
+
+
+
+
+0 | o | x |   | x | x | o | x | 
+1 | x | o |   | x | x | o | o | 
+2 | o | x |   | o | o | x | x | 
+3 | x | o | x | x | o | o | o | 
+4 | o | x | o | o | x | o | x | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for Jespers engine
+Compute best move for board
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| O | X |   | X | X | O | X |
+| X | O |   | X | X | O | O |
+| O | X |   | O | O | X | X |
+| X | O | X | X | O | O | O |
+| O | X | O | O | X | O | X |
+| X | O | X | X | O | O | X |
+
+Search depth is 42
+
+Jespers engine choosed 2
+
+
+
+
+0 | o | x |   | x | x | o | x | 
+1 | x | o |   | x | x | o | o | 
+2 | o | x | o | o | o | x | x | 
+3 | x | o | x | x | o | o | o | 
+4 | o | x | o | o | x | o | x | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+
+
+
+Turn for pc Cross (depth:21)
+ INFO:evaluationSkipped:0
+ INFO:postCall(2,0.0)
+ INFO:movesDepth increased to: 22
+pc Cross (depth:22) choosed 2
+==================================
+
+0 | o | x |   | x | x | o | x | 
+1 | x | o | x | x | x | o | o | 
+2 | o | x | o | o | o | x | x | 
+3 | x | o | x | x | o | o | o | 
+4 | o | x | o | o | x | o | x | 
+5 | x | o | x | x | o | o | x | 
+    0   1   2   3   4   5   6   
+winner:Cross
+winner:pc Cross (depth:22)
