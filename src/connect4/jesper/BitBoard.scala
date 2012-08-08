@@ -281,7 +281,6 @@ class WrapperBoard(val board:BitBoard) extends Board {
       }
     result
   }
-
 }
 
 class Engine(color:Color.Color) extends Player {
